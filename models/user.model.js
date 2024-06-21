@@ -19,7 +19,7 @@ userSchema.pre('save', async function (next) {
     next();
 });
 userSchema.methods.checkPassword = function (password) {
-    return bcrypt.compareSync(password, this.password); //login nn varnna pasword,Hashed varnn
+    return bcrypt.compareSync(password, this.password); 
 }
 
 
